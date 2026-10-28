@@ -18,5 +18,6 @@
     "bundle": {
       "patch": "./cordis.patch.yml"
     }
-  }
+  },
+  "license": "AGPL-3.0"
 }

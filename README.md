@@ -180,7 +180,7 @@ node test/mcp-smoke.js
 
 ## License
 
-MIT
+AGPL-3.0
 
 ## Sponsor
 
