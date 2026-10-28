@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>RecordForge Test Form</title></head>
+<body>
+<h1>Test Form</h1>
+<form id="form">
+  <label for="name">Name</label><input id="name" name="name" placeholder="Your name"><br>
+  <label for="password">Password</label><input id="password" name="password" type="password"><br>
+  <label for="amount">Amount</label><input id="amount" name="amount" placeholder="Amount"><br>
+  <button type="submit" id="submit">Submit</button>
+</form>
+<div id="result"></div>
+<script>
+  document.getElementById('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var n = document.getElementById('name').value;
+    var p = document.getElementById('password').value;
+    var a = document.getElementById('amount').value;
+    document.getElementById('result').textContent = 'submitted|' + n + '|' + a + '|pwlen=' + p.length;
+  });
+</script>
+</body>
+</html>

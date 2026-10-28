@@ -1,0 +1,54 @@
+{
+  "name": "@anyforgex/recordforge",
+  "version": "0.1.1",
+  "description": "Record browser workflows over CDP and replay them deterministically. An MCP server + CLI that gives any agent-driven browser automation a capture-and-replay capability.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "recordforge": "./bin/recordforge.js",
+    "recordforge-mcp": "./src/index.js"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/engine.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "skill",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint src test bin dsh",
+    "prepack": "node scripts/npm-readme.mjs strip",
+    "postpack": "node scripts/npm-readme.mjs restore",
+    "test": "node test/mcp-smoke.js && node test/e2e.js && node test/multitab.js && node test/interactions.js"
+  },
+  "keywords": [
+    "mcp",
+    "browser-automation",
+    "recording",
+    "replay",
+    "cdp",
+    "rpa",
+    "agent",
+    "workflow"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "chrome-remote-interface": "^0.33.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}

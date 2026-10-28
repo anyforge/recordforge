@@ -1,0 +1,11 @@
+# GitHub-only content — never shipped in the npm package.
+assets/
+scripts/
+dsh/
+test/
+.github/
+CHANGELOG.md
+install.sh
+eslint.config.js
+.gitignore
+README.zh-CN.md

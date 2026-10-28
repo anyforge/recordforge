@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>B</title></head>
+<body>
+<input id="amount" name="amount" placeholder="Amount"><br>
+<button id="submit" type="submit">Submit</button>
+<div id="result"></div>
+<script>
+  document.getElementById('submit').addEventListener('click', function () {
+    document.getElementById('result').textContent = 'B-submitted|' + document.getElementById('amount').value;
+  });
+</script>
+</body>
+</html>
