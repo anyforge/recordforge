@@ -9,3 +9,4 @@ install.sh
 eslint.config.js
 .gitignore
 README.zh-CN.md
+*.npm-bak
