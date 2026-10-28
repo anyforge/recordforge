@@ -5,8 +5,8 @@
   "type": "module",
   "license": "AGPL-3.0",
   "bin": {
-    "recordforge": "./bin/recordforge.js",
-    "recordforge-mcp": "./src/index.js"
+    "recordforge": "bin/recordforge.js",
+    "recordforge-mcp": "src/index.js"
   },
   "main": "./src/index.js",
   "exports": {
