@@ -1,6 +1,6 @@
 {
   "name": "@anyforgex/recordforge",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Record browser workflows over CDP and replay them deterministically. An MCP server + CLI that gives any agent-driven browser automation a capture-and-replay capability.",
   "type": "module",
   "license": "AGPL-3.0",
